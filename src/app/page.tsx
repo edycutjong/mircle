@@ -141,7 +141,7 @@ export default function Home() {
               </div>
               
               <div className="flex-1 relative flex items-end gap-2">
-                {/* Mock Chart */}
+                {/* Revenue Chart */}
                 {[12, 15, 18, 25, 42, 65, 89, 124, 180, 245, 310, 480, 650, 890, 1200].map((h, i) => (
                   <div key={i} className="flex-1 flex flex-col justify-end group">
                     <div 
