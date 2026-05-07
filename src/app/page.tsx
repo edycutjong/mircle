@@ -1,5 +1,8 @@
 "use client";
 
+import { StatusBar } from "@/components/StatusBar";
+import { Footer } from "@/components/Footer";
+
 import { useState } from "react";
 import { theMiracleService } from "@/lib/themiracle";
 
@@ -19,6 +22,8 @@ export default function Home() {
   };
 
   return (
+    <>
+      <StatusBar />
     <div className="flex flex-col flex-1 h-screen overflow-hidden p-6 gap-6">
       {/* HEADER */}
       <header className="flex justify-between items-center bg-surface p-4 rounded-xl border border-primary/20 backdrop-blur-md">
@@ -173,5 +178,7 @@ export default function Home() {
         )}
       </main>
     </div>
+      <Footer />
+    </>
   );
 }
