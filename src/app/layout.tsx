@@ -6,8 +6,13 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains-mono" });
 
 export const metadata: Metadata = {
-  title: "Mircle | Lifetime Pro Incentive",
-  description: "TheMiracle SDK integration demonstrating a high-value, zero-marginal-cost digital incentive.",
+  title: "Mircle | Zero-Cost GTM Incentive Layer",
+  description: "Lifetime Pro Licenses as a $5,000 value proposition. Zero marginal cost. TheMiracle SDK integration for wallet-native user acquisition.",
+  openGraph: {
+    title: "Mircle — $5K in Protection, Zero Cost",
+    description: "Wallet-native security scanner with Lifetime Pro License incentives. Built for Colosseum Frontier 2026.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
