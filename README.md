@@ -16,7 +16,7 @@
   ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
   ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
   ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
-  [![Mircle CI](https://github.com/edycutjong/frontier-themiracle/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/frontier-themiracle/actions/workflows/ci.yml)
+  [![Mircle CI](https://github.com/edycutjong/mircle/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/mircle/actions/workflows/ci.yml)
 </div>
 
 ---
@@ -58,8 +58,8 @@ For a detailed breakdown of our system architecture and data flow, please refer 
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/edycutjong/frontier-themiracle.git
-   cd frontier-themiracle
+   git clone https://github.com/edycutjong/mircle.git
+   cd mircle
    ```
 2. **Install dependencies:**
    ```bash
