@@ -30,6 +30,7 @@ export function ConfettiExplosion({ active }: { active: boolean }) {
       shape: Math.random() > 0.5 ? "square" : "circle",
     }));
 
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setPieces(newPieces);
 
     const timer = setTimeout(() => setPieces([]), 4000);

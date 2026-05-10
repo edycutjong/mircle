@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach, vi } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen, act } from '@testing-library/react';
 import { ThreatFeed } from './ThreatFeed';
 
 afterEach(() => {
@@ -27,14 +27,27 @@ describe('ThreatFeed', () => {
     expect(screen.getAllByText('SAFE').length).toBeGreaterThanOrEqual(1);
   });
 
-  it('adds new events on interval', async () => {
+  it('adds new events on interval', () => {
     vi.useFakeTimers();
     render(<ThreatFeed />);
     
-    await vi.advanceTimersByTimeAsync(4000);
+    act(() => {
+      vi.advanceTimersByTime(4000);
+    });
     
     expect(screen.getAllByText('SAFE').length).toBeGreaterThanOrEqual(1);
     
+    vi.useRealTimers();
+  });
+
+  it('clears interval on unmount', () => {
+    vi.useFakeTimers();
+    const clearIntervalSpy = vi.spyOn(global, 'clearInterval');
+    const { unmount } = render(<ThreatFeed />);
+    
+    unmount();
+    
+    expect(clearIntervalSpy).toHaveBeenCalled();
     vi.useRealTimers();
   });
 });

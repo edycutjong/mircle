@@ -32,6 +32,7 @@ export function ThreatFeed() {
       id: i,
       time: new Date(Date.now() - (3 - i) * 3000).toLocaleTimeString("en-US", { hour12: false }),
     }));
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setEvents(initial);
 
     let index = 4;

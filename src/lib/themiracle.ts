@@ -38,7 +38,7 @@ export class TheMiracleService {
         licenseId: data.licenseId || `MRC-${Math.random().toString(36).substring(2, 6).toUpperCase()}-99B1`,
         status: data.status || "ACTIVATED"
       };
-    } catch (e) {
+    } catch (_err) {
       console.error("[TheMiracle SDK] Failed to process claim, falling back to mock");
       await new Promise(res => setTimeout(res, 1500));
       return {
@@ -48,7 +48,7 @@ export class TheMiracleService {
     }
   }
 
-  async getAdminMetrics(): Promise<any> {
+  async getAdminMetrics(): Promise<Record<string, unknown>> {
     this.init();
     try {
       const response = await fetch(`${this.apiUrl}/metrics`, {
@@ -56,7 +56,7 @@ export class TheMiracleService {
       });
       if (!response.ok) throw new Error("Failed to fetch metrics");
       return await response.json();
-    } catch (e) {
+    } catch (_err) {
       // Simulate fetching metrics from TheMiracle backend as fallback
       await new Promise(res => setTimeout(res, 500));
       return {

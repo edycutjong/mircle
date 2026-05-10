@@ -16,6 +16,7 @@ export function LiveStatusBar() {
     }, 1000);
 
     // Initialize immediately
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTime(new Date().toISOString().replace("T", " ").slice(0, 19) + " UTC");
 
     return () => {
