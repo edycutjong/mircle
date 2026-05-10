@@ -8,10 +8,22 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jet
 export const metadata: Metadata = {
   title: "Mircle | Zero-Cost GTM Incentive Layer",
   description: "Lifetime Pro Licenses as a $5,000 value proposition. Zero marginal cost. TheMiracle SDK integration for wallet-native user acquisition.",
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "Mircle — $5K in Protection, Zero Cost",
     description: "Wallet-native security scanner with Lifetime Pro License incentives. Built for Colosseum Frontier 2026.",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Mircle | Zero-Cost GTM Incentive Layer",
+      },
+    ],
   },
 };
 
