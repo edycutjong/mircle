@@ -21,7 +21,7 @@ function AnimatedBar({ height, delay, label }: { height: number; delay: number; 
       </span>
       <div className="w-full h-48 bg-slate-900/50 rounded-t relative overflow-hidden">
         <div
-          className="absolute bottom-0 w-full bg-gradient-to-t from-primary-dark via-primary to-primary-light rounded-t transition-all duration-1000 ease-out"
+          className="absolute bottom-0 w-full bg-linear-to-t from-primary-dark via-primary to-primary-light rounded-t transition-all duration-1000 ease-out"
           style={{ height: `${h}%` }}
         />
       </div>
@@ -76,7 +76,7 @@ export default function MetricsPage() {
         {/* HEADER */}
         <header className="glass sticky top-0 z-50 px-6 py-3 flex items-center justify-between border-b border-primary/10">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center glow-amber">
+            <div className="w-9 h-9 rounded-lg bg-linear-to-br from-primary to-primary-dark flex items-center justify-center glow-amber">
               <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M3 3v18h18" stroke="currentColor" strokeWidth="2" fill="none" />
                 <path d="m19 9-5 5-4-4-3 3" stroke="currentColor" strokeWidth="2" fill="none" />
@@ -100,7 +100,7 @@ export default function MetricsPage() {
           {/* Campaign Goal Banner */}
           <div className="glass-card p-6 border-primary/30 slide-up">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center shrink-0">
                 <svg className="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="12" cy="12" r="10" />
                   <path d="M8 12l2.5 2.5L16 9" />
@@ -211,7 +211,7 @@ export default function MetricsPage() {
 
           {/* Strategic Insight */}
           <div className="glass-card p-5 flex items-start gap-4 border-primary/30 slide-up slide-up-delay-5">
-            <svg className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg className="h-6 w-6 text-primary shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
               <line x1="12" y1="9" x2="12" y2="13" />
               <line x1="12" y1="17" x2="12.01" y2="17" />
