@@ -7,7 +7,7 @@
   
   [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg?style=for-the-badge)](https://mircle.edycu.dev)
   [![Pitch Deck](https://img.shields.io/badge/Pitch-Deck-f59e0b.svg?style=for-the-badge)](https://mircle.edycu.dev/pitch)
-  [![Pitch Video](https://img.shields.io/badge/Pitch-Video-red.svg?style=for-the-badge)](https://youtube.com/your-video)
+  [![Pitch Video](https://img.shields.io/badge/Pitch-Video-red.svg?style=for-the-badge)](https://youtu.be/B36prrsBR3Q)
   [![Superteam Earn](https://img.shields.io/badge/Superteam-Earn_Listing-blue.svg?style=for-the-badge)](https://superteam.fun/earn/listing/build-the-best-benefit-win-a-wallet-placement)
 
   <br/>
