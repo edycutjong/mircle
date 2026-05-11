@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { ParticleField } from "@/components/ParticleField";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { ThreatFeed } from "@/components/ThreatFeed";
@@ -86,12 +87,12 @@ export default function MetricsPage() {
               <p className="text-[10px] text-slate-500 font-mono -mt-0.5">CAMPAIGN PERFORMANCE DASHBOARD</p>
             </div>
           </div>
-          <a
+          <Link
             href="/"
             className="text-xs font-mono text-slate-400 hover:text-primary transition-colors border border-slate-800 px-3 py-1.5 rounded-lg hover:border-primary/40"
           >
             ← BACK TO APP
-          </a>
+          </Link>
         </header>
 
         {/* MAIN */}
